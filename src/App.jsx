@@ -7,16 +7,14 @@ import "./App.css";
 
 function App() {
     return (
-        <div className="app-container">
-            <div className="main-content">
+        <>
+            <div id="container">
                 <BioContainer />
-                <div className="right-content">
-                    <AboutContainer />
-                    <SkillsContainer />
-                </div>
+                <AboutContainer />
             </div>
+            <SkillsContainer />
             <Footer />
-        </div>
+        </>
     );
 }
 

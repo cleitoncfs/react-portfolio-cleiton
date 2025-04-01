@@ -1,30 +1,66 @@
 .skillsContainer {
+    margin-top: 30px;
+}
+
+.skillsTitle {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: var(--main-text-color);
+}
+
+.description {
+    margin-bottom: 20px;
+    color: var(--main-text-color);
+}
+
+.skillsGrid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 800px;
-    margin: 20px auto; /* Espaçamento no topo e centralização */
-    padding-top: 20px;
-    color: var(--main-text-color); /* Garantir texto branco */
+    max-width: 900px;
+    margin: 0 auto;
 }
 
 .skillBox {
+    background-color: white;
     padding: 20px;
-    background-color: var(--main-text-color); /* Fundo branco */
-    color: #333; /* Texto escuro */
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 .skillTitle {
-    font-size: 1.2rem; /* Tamanho ajustado do título */
+    font-size: 1.2rem;
     margin-bottom: 15px;
     font-weight: bold;
+    color: #333;
 }
 
-.skillBox i {
-    font-size: 2.5rem; /* Ícones grandes */
-    margin: 5px;
-    color: var(--main-color); /* Ícones verdes */
+.iconsContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.iconsContainer i {
+    font-size: 2.5rem;
+    transition: transform 0.3s ease;
+}
+
+.iconsContainer i:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .skillsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skillsGrid {
+        grid-template-columns: 1fr;
+    }
 }

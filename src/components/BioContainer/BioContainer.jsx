@@ -1,29 +1,30 @@
-import React from "react";
 import styles from "./BioContainer.module.css";
 
-const BioContainer = () => {
+export default function BioContainer() {
     return (
-        <aside className={styles.bioContainer}>
-            <h2 className={styles.bioTitle}>Cleiton Santos</h2>
+        <aside className={styles["bio-container"]}>
+            <h2>Cleiton Santos</h2>
             <img
-                className={styles.bioImage}
-                src="/img/cleiton-perfil.jpeg" // Caminho corrigido
+                className={styles["bio-image"]}
+                src="/public/img/cleiton-perfil.jpeg"
                 alt="Cleiton Santos"
             />
-            <p className={styles.bioDescription}>
+            <p>
                 Olá, eu sou Cleiton Santos, um{" "}
                 <span className={styles.highlight}>Desenvolvedor</span>{" "}
                 apaixonado por tecnologia.
             </p>
-            <p className={styles.welcomeText}>Bem-vindo ao meu portfólio!</p>
-            <ul className={styles.socialContainer}>
+            <p className={styles["welcome-text"]}>
+                Bem-vindo ao meu portfólio!
+            </p>
+            <ul className={styles["social-container"]}>
                 <li>
                     <a
                         href="https://www.linkedin.com/in/cleitoncfs/"
                         target="_blank"
                         aria-label="LinkedIn"
                     >
-                        <i class="bi bi-linkedin"></i>
+                        <i className="bi bi-linkedin"></i>
                     </a>
                 </li>
                 <li>
@@ -32,7 +33,7 @@ const BioContainer = () => {
                         target="_blank"
                         aria-label="GitHub"
                     >
-                        <i class="bi bi-github"></i>
+                        <i className="bi bi-github"></i>
                     </a>
                 </li>
                 <li>
@@ -41,16 +42,14 @@ const BioContainer = () => {
                         target="_blank"
                         aria-label="WhatsApp"
                     >
-                        <i class="bi bi-whatsapp"></i>
+                        <i className="bi bi-whatsapp"></i>
                     </a>
                 </li>
             </ul>
-            <div className={styles.emailContainer}>
-                <ion-icon name="mail-outline"></ion-icon>
+            <div className={styles["email-container"]}>
+                <i className="bi bi-envelope"></i>
                 <a href="mailto:cleitoncfs@gmail.com">cleitoncfs@gmail.com</a>
             </div>
         </aside>
     );
-};
-
-export default BioContainer;
+}
