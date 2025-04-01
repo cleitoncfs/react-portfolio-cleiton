@@ -1,0 +1,30 @@
+.skillsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 20px;
+    max-width: 800px;
+    margin: 20px auto; /* Espaçamento no topo e centralização */
+    padding-top: 20px;
+    color: var(--main-text-color); /* Garantir texto branco */
+}
+
+.skillBox {
+    padding: 20px;
+    background-color: var(--main-text-color); /* Fundo branco */
+    color: #333; /* Texto escuro */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.skillTitle {
+    font-size: 1.2rem; /* Tamanho ajustado do título */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.skillBox i {
+    font-size: 2.5rem; /* Ícones grandes */
+    margin: 5px;
+    color: var(--main-color); /* Ícones verdes */
+}

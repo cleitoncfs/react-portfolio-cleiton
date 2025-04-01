@@ -1,0 +1,50 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+}
+
+/* Root container */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--about-bg-color);
+    color: var(--main-text-color);
+}
+
+/* Main content layout */
+.main-content {
+    display: flex;
+    flex: 1;
+}
+
+/* Left column (Bio) */
+.bioContainer {
+    flex: 1 1 20%;
+    background-color: var(--bio-bg-color);
+    border-right: 5px solid var(--border-color);
+    padding: 30px;
+    text-align: center;
+}
+
+/* Right column (About + Skills) */
+.right-content {
+    flex: 1 1 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--bio-bg-color);
+    color: var(--main-text-color);
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 5px solid var(--border-color);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}

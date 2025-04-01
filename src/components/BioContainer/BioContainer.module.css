@@ -1,0 +1,77 @@
+.bioContainer {
+    flex: 1 1 20%;
+    min-height: 100vh;
+    background-color: #2c3e50; /* Azul escuro */
+    text-align: center;
+    padding: 30px;
+    border-right: 5px solid #b0b0b0; /* Cinza claro */
+}
+
+.bioTitle {
+    margin-bottom: 25px;
+    color: white;
+    font-size: 1.8rem;
+}
+
+.bioImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+.bioDescription {
+    margin-bottom: 20px;
+    color: white;
+    font-size: 1rem;
+}
+
+.welcomeText {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #b0b0b0;
+}
+
+.socialContainer li {
+    flex: 1 1 0;
+    max-width: 60px;
+}
+
+.socialContainer li a {
+    display: inline-block;
+    color: #54b689; /* Verde */
+    font-size: 30px;
+}
+
+.socialContainer li a:hover {
+    transform: scale(1.1); /* Zoom mais sutil (1.1 → 1.05) */
+    transition: transform 0.3s ease; /* Tempo mais rápido (0.3s → 0.2s) */
+    filter: brightness(1.2); /* Aumenta um pouco o brilho */
+}
+
+.emailContainer {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 1rem;
+}
+
+.emailContainer ion-icon {
+    color: #54b689;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.emailContainer a {
+    color: white;
+    text-decoration: none;
+}
