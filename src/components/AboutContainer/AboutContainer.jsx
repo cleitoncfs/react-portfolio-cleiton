@@ -10,8 +10,21 @@ export default function AboutContainer() {
             </p>
 
             <p className={styles.description}>
-                Sou um desenvolvedor especializado em websites e aplicações...
-                {/* Texto completo aqui */}
+                Sou um desenvolvedor especializado em websites e aplicações,
+                gosto de participar do projeto desde a{" "}
+                <span className={styles.highlight}>
+                    definição das regras de negócio e levantamento de requisitos
+                </span>{" "}
+                até o{" "}
+                <span className={styles.highlight}>deploy da aplicação</span>.
+            </p>
+
+            <p className={styles.description}>
+                Atuo tanto no{" "}
+                <span className={styles.highlight}>front-end</span> como no{" "}
+                <span className={styles.highlight}>back-end</span>, e amo
+                tecnologia, estudo todos os dias para me tornar cada vez melhor
+                e escrever código de qualidade.
             </p>
 
             <div className={styles["button-container"]}>
@@ -34,11 +47,6 @@ export default function AboutContainer() {
                     <span>Certificados</span>
                 </a>
             </div>
-
-            <h2 className={styles["skills-section-title"]}>Minhas Skills</h2>
-            <p className={styles.description}>
-                Tecnologias nas quais tenho competência:
-            </p>
 
             <SkillsContainer />
         </section>

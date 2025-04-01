@@ -12,7 +12,7 @@ function App() {
                 <BioContainer />
                 <AboutContainer />
             </div>
-            <SkillsContainer />
+
             <Footer />
         </>
     );

@@ -5,9 +5,9 @@ export default function BioContainer() {
         <aside className={styles["bio-container"]}>
             <h2>Cleiton Santos</h2>
             <img
-                className={styles["bio-image"]}
-                src="/public/img/cleiton-perfil.jpeg"
+                src="/img/cleiton-perfil.jpeg"
                 alt="Cleiton Santos"
+                className={styles["bio-image"]}
             />
             <p>
                 Olá, eu sou Cleiton Santos, um{" "}
@@ -17,12 +17,13 @@ export default function BioContainer() {
             <p className={styles["welcome-text"]}>
                 Bem-vindo ao meu portfólio!
             </p>
+
             <ul className={styles["social-container"]}>
                 <li>
                     <a
                         href="https://www.linkedin.com/in/cleitoncfs/"
                         target="_blank"
-                        aria-label="LinkedIn"
+                        rel="noreferrer"
                     >
                         <i className="bi bi-linkedin"></i>
                     </a>
@@ -31,7 +32,7 @@ export default function BioContainer() {
                     <a
                         href="https://github.com/cleitoncfs"
                         target="_blank"
-                        aria-label="GitHub"
+                        rel="noreferrer"
                     >
                         <i className="bi bi-github"></i>
                     </a>
@@ -40,12 +41,13 @@ export default function BioContainer() {
                     <a
                         href="https://wa.me/351912155966/"
                         target="_blank"
-                        aria-label="WhatsApp"
+                        rel="noreferrer"
                     >
                         <i className="bi bi-whatsapp"></i>
                     </a>
                 </li>
             </ul>
+
             <div className={styles["email-container"]}>
                 <i className="bi bi-envelope"></i>
                 <a href="mailto:cleitoncfs@gmail.com">cleitoncfs@gmail.com</a>
