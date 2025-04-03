@@ -4,7 +4,7 @@
     background-color: var(--bio-bg-color);
     text-align: center;
     padding: 30px;
-    border-right: 1px solid var(--border-color);
+    /* border-right: 5px solid var(--border-color); */
 }
 
 .bio-container h2 {

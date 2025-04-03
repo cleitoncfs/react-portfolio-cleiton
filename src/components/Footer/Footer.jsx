@@ -4,7 +4,7 @@ import styles from "./Footer.module.css";
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <p>&copy; 2024 Cleiton Santos. Todos os direitos reservados.</p>
+            <p>&copy; 2025 Cleiton Santos. Todos os direitos reservados.</p>
             <p>
                 <a className={styles.link} href="#container">
                     Voltar ao topo
