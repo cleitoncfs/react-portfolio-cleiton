@@ -78,3 +78,25 @@
     font-size: 20px;
     margin-right: 5px;
 }
+
+/* Mobile */
+@media (max-width: 450px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .bio-container {
+        min-height: auto;
+        border-right: none;
+        border-bottom: 5px solid var(--bio-border-color);
+    }
+
+    .bio-container h2 {
+        display: none;
+    }
+
+    .bio-container p {
+        max-width: 60%;
+        margin: 10px auto;
+    }
+}

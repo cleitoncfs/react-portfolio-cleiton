@@ -82,8 +82,13 @@
         line-height: 26px;
     }
 
-    .button-container {
+    /* .button-container {
         flex-direction: column;
         align-items: center;
+    } */
+
+    .btn-projects,
+    .btn-certificates {
+        margin: 20px auto;
     }
 }
