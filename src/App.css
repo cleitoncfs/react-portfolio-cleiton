@@ -1,14 +1,64 @@
-/* Reset e variáveis já devem estar no index.css */
+/* Reset e Variáveis Globais */
+:root {
+    --main-text-color: #333;
+    --link-color: #0066cc;
+    --background-light: #f5f5f5;
+    --spacing-small: 1rem;
+    --spacing-medium: 2rem;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Layout Principal (Ajuste Fino) */
 #container {
     display: flex;
     min-height: 100vh;
     color: var(--main-text-color);
 }
 
+/* Seção Bio (Header) */
+.header {
+    padding: var(--spacing-medium);
+    background: var(--background-light);
+    width: 35%; /* Proporção fixa para alinhamento */
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Seção About (Conteúdo) */
+.main-content {
+    flex: 1;
+    padding: var(--spacing-medium);
+}
+
 /* Mobile */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #container {
         flex-direction: column;
+    }
+
+    .header {
+        width: 100%;
+        padding: var(--spacing-small);
+        text-align: center;
+    }
+}
+
+/* iPad Mini e Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header {
+        width: 35%; /* Mantém proporção idêntica ao original */
+        padding: var(--spacing-medium);
     }
 }
