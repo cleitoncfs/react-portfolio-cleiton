@@ -29,7 +29,7 @@ export default function AboutContainer() {
 
             <div className={styles["button-container"]}>
                 <a
-                    href="https://projetos-dev-one.vercel.app/"
+                    href="https://projetos-cleitonsantos.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles["btn-projects"]}
