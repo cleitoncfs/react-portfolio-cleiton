@@ -38,7 +38,7 @@ export default function AboutContainer() {
                     <span>Ver Projetos</span>
                 </a>
                 <a
-                    href="https://cleitoncfs.github.io/Certificados-Dev/"
+                    href="https://certificados-cleitonsantos.netlify.app/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className={styles["btn-certificates"]}
