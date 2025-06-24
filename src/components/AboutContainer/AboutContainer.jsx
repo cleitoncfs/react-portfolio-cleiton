@@ -1,7 +1,30 @@
+import { useRef, useEffect } from "react";
 import styles from "./AboutContainer.module.css";
 import SkillsContainer from "../SkillsContainer/SkillsContainer";
 
 export default function AboutContainer() {
+    const sectionRef = useRef(null);
+
+    useEffect(() => {
+        const element = sectionRef.current;
+        if (!element) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(styles["fade-in-visible"]);
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        observer.observe(element);
+
+        return () => {
+            observer.disconnect();
+        };
+    }, []);
+
     return (
         <section className={styles["about-container"]}>
             <h1 className={styles.name}>Cleiton Santos</h1>
