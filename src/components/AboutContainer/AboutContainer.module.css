@@ -3,12 +3,15 @@
     min-height: 100vh;
     background-color: var(--about-bg-color);
     padding: 50px;
+}
+
+.text-wrapper {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
-.fade-in-visible {
+.text-wrapper.fade-in-visible {
     opacity: 1;
     transform: translateY(0);
 }
