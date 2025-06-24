@@ -24,16 +24,12 @@ export default function AboutContainer() {
             </p>
 
             <p className={styles.description}>
-                Trabalho tanto no{" "}
+                Atuo tanto no{" "}
                 <span className={styles.highlight}>front-end</span> quanto no{" "}
-                <span className={styles.highlight}>back-end</span>, sempre
-                buscando escrever código limpo, escalável e de qualidade. Sou
-                movido pela{" "}
-                <span className={styles.highlight}>
-                    curiosidade e paixão por tecnologia
-                </span>{" "}
-                — estudo todos os dias para evoluir como profissional e
-                contribuir com projetos cada vez mais sólidos.
+                <span className={styles.highlight}>back-end</span>, buscando
+                sempre escrever código limpo, escalável e de qualidade. Estou em
+                constante evolução, estudando todos os dias para criar soluções
+                eficientes que tragam valor real aos projetos.
             </p>
 
             <div className={styles["button-container"]}>
