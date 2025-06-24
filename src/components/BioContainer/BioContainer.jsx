@@ -1,6 +1,30 @@
+import { useEffect, useRef } from "react";
 import styles from "./BioContainer.module.css";
 
 export default function BioContainer() {
+    const extraRef = useRef(null);
+
+    useEffect(() => {
+        const target = extraRef.current;
+
+        if (!target) return;
+
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add(styles["fade-in-visible"]);
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        observer.observe(target);
+
+        return () => {
+            observer.unobserve(target);
+        };
+    }, []);
+
     return (
         <aside className={styles["bio-container"]}>
             <h2>Cleiton Santos</h2>
