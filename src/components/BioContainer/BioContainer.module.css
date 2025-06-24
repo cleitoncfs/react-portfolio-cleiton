@@ -79,6 +79,17 @@
     margin-right: 5px;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .about-extra {
     font-size: 0.95rem;
     color: var(--main-text-color);
@@ -86,6 +97,8 @@
     margin: 12px auto 20px auto;
     line-height: 1.5;
     font-style: italic;
+    animation: fadeIn 1s ease forwards;
+    opacity: 0;
 }
 
 /* Mobile */
