@@ -10,21 +10,30 @@ export default function AboutContainer() {
             </p>
 
             <p className={styles.description}>
-                Sou um desenvolvedor especializado em websites e aplicações,
-                gosto de participar do projeto desde a{" "}
+                Sou desenvolvedor com foco em websites e aplicações, e gosto de
+                estar presente desde a{" "}
                 <span className={styles.highlight}>
-                    definição das regras de negócio e levantamento de requisitos
+                    definição das regras de negócio e o levantamento de
+                    requisitos
                 </span>{" "}
                 até o{" "}
-                <span className={styles.highlight}>deploy da aplicação</span>.
+                <span className={styles.highlight}>
+                    deploy final da solução
+                </span>
+                .
             </p>
 
             <p className={styles.description}>
-                Atuo tanto no{" "}
-                <span className={styles.highlight}>front-end</span> como no{" "}
-                <span className={styles.highlight}>back-end</span>, e amo
-                tecnologia, estudo todos os dias para me tornar cada vez melhor
-                e escrever código de qualidade.
+                Trabalho tanto no{" "}
+                <span className={styles.highlight}>front-end</span> quanto no{" "}
+                <span className={styles.highlight}>back-end</span>, sempre
+                buscando escrever código limpo, escalável e de qualidade. Sou
+                movido pela{" "}
+                <span className={styles.highlight}>
+                    curiosidade e paixão por tecnologia
+                </span>{" "}
+                — estudo todos os dias para evoluir como profissional e
+                contribuir com projetos cada vez mais sólidos.
             </p>
 
             <div className={styles["button-container"]}>
