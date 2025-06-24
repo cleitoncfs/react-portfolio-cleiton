@@ -26,7 +26,7 @@ export default function AboutContainer() {
     }, []);
 
     return (
-        <section className={styles["about-container"]}>
+        <section ref={sectionRef} className={styles["about-container"]}>
             <h1 className={styles.name}>Cleiton Santos</h1>
             <p className={styles.title}>
                 <span className={styles.highlight}>Web Developer</span>
