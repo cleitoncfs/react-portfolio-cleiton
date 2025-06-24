@@ -11,11 +11,19 @@ export default function BioContainer() {
             />
             <p>
                 Olá, eu sou Cleiton Santos, um{" "}
-                <span className={styles.highlight}>Desenvolvedor</span>{" "}
-                apaixonado por tecnologia.
+                <span className={styles.highlight}>
+                    desenvolvedor apaixonado por tecnologia
+                </span>{" "}
+                e movido pela curiosidade.
             </p>
             <p className={styles["welcome-text"]}>
-                Bem-vindo ao meu portfólio!
+                Seja muito bem-vindo ao meu portfólio!
+            </p>
+            <p className={styles["about-extra"]}>
+                Acredito que a tecnologia tem o poder de transformar vidas e
+                encurtar distâncias — por isso estou sempre em busca de novos
+                desafios e aprendizados. Meu foco é evoluir constantemente,
+                desenvolvendo soluções que façam a diferença.
             </p>
 
             <ul className={styles["social-container"]}>

@@ -79,6 +79,15 @@
     margin-right: 5px;
 }
 
+.about-extra {
+    font-size: 0.95rem;
+    color: var(--main-text-color);
+    max-width: 80%;
+    margin: 12px auto 20px auto;
+    line-height: 1.5;
+    font-style: italic;
+}
+
 /* Mobile */
 @media (max-width: 450px) {
     .container {
