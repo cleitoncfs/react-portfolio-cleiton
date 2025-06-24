@@ -39,17 +39,17 @@ const SkillsContainer = () => {
                 <div className={styles.skillBox}>
                     <p className={styles.skillTitle}>Front-end</p>
                     <div className={styles.iconsContainer}>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="HTML5">
                             <i className="devicon-html5-plain colored"></i>
-                            <span className={styles.techLabel}>HTML5</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="CSS3">
                             <i className="devicon-css3-plain colored"></i>
-                            <span className={styles.techLabel}>CSS3</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div
+                            className={styles.tooltip}
+                            data-tooltip="JavaScript"
+                        >
                             <i className="devicon-javascript-plain colored"></i>
-                            <span className={styles.techLabel}>JavaScript</span>
                         </div>
                     </div>
                 </div>
@@ -58,17 +58,14 @@ const SkillsContainer = () => {
                 <div className={styles.skillBox}>
                     <p className={styles.skillTitle}>Back-end</p>
                     <div className={styles.iconsContainer}>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="Node.js">
                             <i className="devicon-nodejs-plain colored"></i>
-                            <span className={styles.techLabel}>Node.js</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="Python">
                             <i className="devicon-python-plain colored"></i>
-                            <span className={styles.techLabel}>Python</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="PHP">
                             <i className="devicon-php-plain colored"></i>
-                            <span className={styles.techLabel}>PHP</span>
                         </div>
                     </div>
                 </div>
@@ -77,17 +74,14 @@ const SkillsContainer = () => {
                 <div className={styles.skillBox}>
                     <p className={styles.skillTitle}>Bancos de Dados</p>
                     <div className={styles.iconsContainer}>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="MySQL">
                             <i className="devicon-mysql-plain colored"></i>
-                            <span className={styles.techLabel}>MySQL</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="MongoDB">
                             <i className="devicon-mongodb-plain colored"></i>
-                            <span className={styles.techLabel}>MongoDB</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="SQLite">
                             <i className="devicon-sqlite-plain colored"></i>
-                            <span className={styles.techLabel}>SQLite</span>
                         </div>
                     </div>
                 </div>
@@ -96,17 +90,17 @@ const SkillsContainer = () => {
                 <div className={styles.skillBox}>
                     <p className={styles.skillTitle}>Frameworks Front-end</p>
                     <div className={styles.iconsContainer}>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="React">
                             <i className="devicon-react-plain colored"></i>
-                            <span className={styles.techLabel}>React</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="Vue.js">
                             <i className="devicon-vuejs-plain colored"></i>
-                            <span className={styles.techLabel}>Vue.js</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div
+                            className={styles.tooltip}
+                            data-tooltip="AngularJS"
+                        >
                             <i className="devicon-angularjs-plain colored"></i>
-                            <span className={styles.techLabel}>AngularJS</span>
                         </div>
                     </div>
                 </div>
@@ -115,17 +109,14 @@ const SkillsContainer = () => {
                 <div className={styles.skillBox}>
                     <p className={styles.skillTitle}>Frameworks Back-end</p>
                     <div className={styles.iconsContainer}>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="Flask">
                             <i className="devicon-flask-plain colored"></i>
-                            <span className={styles.techLabel}>Flask</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="Django">
                             <i className="devicon-django-plain colored"></i>
-                            <span className={styles.techLabel}>Django</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="Laravel">
                             <i className="devicon-laravel-plain colored"></i>
-                            <span className={styles.techLabel}>Laravel</span>
                         </div>
                     </div>
                 </div>
@@ -134,17 +125,14 @@ const SkillsContainer = () => {
                 <div className={styles.skillBox}>
                     <p className={styles.skillTitle}>Ferramentas</p>
                     <div className={styles.iconsContainer}>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="Git">
                             <i className="devicon-git-plain colored"></i>
-                            <span className={styles.techLabel}>Git</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="Linux">
                             <i className="devicon-linux-plain colored"></i>
-                            <span className={styles.techLabel}>Linux</span>
                         </div>
-                        <div className={styles.iconWrapper}>
+                        <div className={styles.tooltip} data-tooltip="Docker">
                             <i className="devicon-docker-plain colored"></i>
-                            <span className={styles.techLabel}>Docker</span>
                         </div>
                     </div>
                 </div>
