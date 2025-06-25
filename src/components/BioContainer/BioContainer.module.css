@@ -126,6 +126,25 @@
     }
 }
 
+@media (max-width: 450px) {
+    .email-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .email-container i,
+    .email-container a {
+        flex: initial; /* Não força largura, usa só o necessário */
+    }
+
+    .email-container a {
+        max-width: none; /* Remove a limitação que pode estar causando quebra */
+        font-size: 0.95rem;
+    }
+}
+
 /* iPad Mini e Tablets Pequenos */
 @media (min-width: 451px) and (max-width: 767px) {
     .bio-container {
