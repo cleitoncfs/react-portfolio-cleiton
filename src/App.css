@@ -15,20 +15,22 @@
 
 body {
     font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Impede scroll lateral */
 }
 
-/* Layout Principal (Ajuste Fino) */
 #container {
     display: flex;
+    flex-wrap: wrap; /* Garante quebra no mobile */
     min-height: 100vh;
     color: var(--main-text-color);
+    overflow-x: hidden;
 }
 
-/* Seção Bio (Header) */
 .header {
     padding: var(--spacing-medium);
     background: var(--background-light);
-    width: 35%; /* Proporção fixa para alinhamento */
+    width: 35%;
+    min-width: 280px;
 }
 
 .header h1 {
@@ -36,7 +38,6 @@ body {
     margin-bottom: 0.5rem;
 }
 
-/* Seção About (Conteúdo) */
 .main-content {
     flex: 1;
     padding: var(--spacing-medium);
@@ -52,13 +53,5 @@ body {
         width: 100%;
         padding: var(--spacing-small);
         text-align: center;
-    }
-}
-
-/* iPad Mini e Tablets */
-@media (min-width: 768px) and (max-width: 1024px) {
-    .header {
-        width: 35%;
-        padding: var(--spacing-medium);
     }
 }
