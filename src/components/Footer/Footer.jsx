@@ -10,9 +10,9 @@ const Footer = () => {
             </p>
 
             <nav className={styles.linksGroup}>
-                <a className={styles.link} href="#container">
+                {/* <a className={styles.link} href="#container">
                     <i className="bi bi-arrow-up-circle"></i> Voltar ao topo
-                </a>
+                </a> */}
                 <a className={styles.link} href="mailto:cleitoncfs@gmail.com">
                     <i className="bi bi-envelope-fill"></i> Contato
                 </a>

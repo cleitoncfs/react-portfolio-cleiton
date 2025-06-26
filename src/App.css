@@ -55,3 +55,36 @@ body {
         text-align: center;
     }
 }
+
+/* Garantir que o footer tenha espaço suficiente */
+footer {
+    padding-bottom: 80px; /* Igual ao bottom do botão */
+}
+
+@media (max-width: 767px) {
+    footer {
+        padding-bottom: 20px;
+    }
+}
+
+/* Correção específica para o ponto de quebra 768px */
+footer {
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    footer {
+        padding-bottom: 0; /* Remove padding extra em desktop */
+    }
+}
+
+/* Garante que o conteúdo do footer não quebre */
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    max-width: 100%;
+}
