@@ -1,6 +1,33 @@
 import { useEffect, useRef } from "react";
 import styles from "./SkillsContainer.module.css";
 
+const skillsData = [
+    {
+        title: "Front-end",
+        icons: ["html5", "css3", "javascript"],
+    },
+    {
+        title: "Back-end",
+        icons: ["nodejs", "python", "php"],
+    },
+    {
+        title: "Bancos de Dados",
+        icons: ["mysql", "mongodb", "sqlite"],
+    },
+    {
+        title: "Frameworks Front-end",
+        icons: ["react", "vuejs", "angularjs"],
+    },
+    {
+        title: "Frameworks Back-end",
+        icons: ["flask", "django", "laravel"],
+    },
+    {
+        title: "Ferramentas",
+        icons: ["git", "linux", "docker"],
+    },
+];
+
 const SkillsContainer = () => {
     const sectionRef = useRef(null);
 
@@ -35,107 +62,28 @@ const SkillsContainer = () => {
             </p>
 
             <div className={styles.skillsGrid}>
-                {/* Front-end */}
-                <div className={styles.skillBox}>
-                    <p className={styles.skillTitle}>Front-end</p>
-                    <div className={styles.iconsContainer}>
-                        <div className={styles.tooltip} data-tooltip="HTML5">
-                            <i className="devicon-html5-plain colored"></i>
-                        </div>
-                        <div className={styles.tooltip} data-tooltip="CSS3">
-                            <i className="devicon-css3-plain colored"></i>
-                        </div>
-                        <div
-                            className={styles.tooltip}
-                            data-tooltip="JavaScript"
-                        >
-                            <i className="devicon-javascript-plain colored"></i>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Back-end */}
-                <div className={styles.skillBox}>
-                    <p className={styles.skillTitle}>Back-end</p>
-                    <div className={styles.iconsContainer}>
-                        <div className={styles.tooltip} data-tooltip="Node.js">
-                            <i className="devicon-nodejs-plain colored"></i>
-                        </div>
-                        <div className={styles.tooltip} data-tooltip="Python">
-                            <i className="devicon-python-plain colored"></i>
-                        </div>
-                        <div className={styles.tooltip} data-tooltip="PHP">
-                            <i className="devicon-php-plain colored"></i>
+                {skillsData.map((skill, index) => (
+                    <div
+                        key={skill.title}
+                        className={styles.skillBox}
+                        style={{ "--delay": index }}
+                    >
+                        <p className={styles.skillTitle}>{skill.title}</p>
+                        <div className={styles.iconsContainer}>
+                            {skill.icons.map((icon) => (
+                                <div
+                                    key={icon}
+                                    className={styles.tooltip}
+                                    data-tooltip={icon.toUpperCase()}
+                                >
+                                    <i
+                                        className={`devicon-${icon}-plain colored`}
+                                    ></i>
+                                </div>
+                            ))}
                         </div>
                     </div>
-                </div>
-
-                {/* Databases */}
-                <div className={styles.skillBox}>
-                    <p className={styles.skillTitle}>Bancos de Dados</p>
-                    <div className={styles.iconsContainer}>
-                        <div className={styles.tooltip} data-tooltip="MySQL">
-                            <i className="devicon-mysql-plain colored"></i>
-                        </div>
-                        <div className={styles.tooltip} data-tooltip="MongoDB">
-                            <i className="devicon-mongodb-plain colored"></i>
-                        </div>
-                        <div className={styles.tooltip} data-tooltip="SQLite">
-                            <i className="devicon-sqlite-plain colored"></i>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Front-end Frameworks */}
-                <div className={styles.skillBox}>
-                    <p className={styles.skillTitle}>Frameworks Front-end</p>
-                    <div className={styles.iconsContainer}>
-                        <div className={styles.tooltip} data-tooltip="React">
-                            <i className="devicon-react-plain colored"></i>
-                        </div>
-                        <div className={styles.tooltip} data-tooltip="Vue.js">
-                            <i className="devicon-vuejs-plain colored"></i>
-                        </div>
-                        <div
-                            className={styles.tooltip}
-                            data-tooltip="AngularJS"
-                        >
-                            <i className="devicon-angularjs-plain colored"></i>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Back-end Frameworks */}
-                <div className={styles.skillBox}>
-                    <p className={styles.skillTitle}>Frameworks Back-end</p>
-                    <div className={styles.iconsContainer}>
-                        <div className={styles.tooltip} data-tooltip="Flask">
-                            <i className="devicon-flask-plain colored"></i>
-                        </div>
-                        <div className={styles.tooltip} data-tooltip="Django">
-                            <i className="devicon-django-plain colored"></i>
-                        </div>
-                        <div className={styles.tooltip} data-tooltip="Laravel">
-                            <i className="devicon-laravel-plain colored"></i>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Ferramentas */}
-                <div className={styles.skillBox}>
-                    <p className={styles.skillTitle}>Ferramentas</p>
-                    <div className={styles.iconsContainer}>
-                        <div className={styles.tooltip} data-tooltip="Git">
-                            <i className="devicon-git-plain colored"></i>
-                        </div>
-                        <div className={styles.tooltip} data-tooltip="Linux">
-                            <i className="devicon-linux-plain colored"></i>
-                        </div>
-                        <div className={styles.tooltip} data-tooltip="Docker">
-                            <i className="devicon-docker-plain colored"></i>
-                        </div>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     );

@@ -11,8 +11,8 @@ function App() {
             <main id="container">
                 <BioContainer />
                 <AboutContainer />
-                <Footer />
             </main>
+            <Footer />
             <ScrollToTopButton />
         </div>
     );

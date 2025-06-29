@@ -33,7 +33,7 @@ export default function AboutContainer() {
                     <span className={styles.highlight}>Web Developer</span>
                 </p>
 
-                <p className={styles.description}>
+                <p className={styles.description} style={{ "--order": 1 }}>
                     Sou desenvolvedor com foco em websites e aplicações, e gosto
                     de estar presente desde a{" "}
                     <span className={styles.highlight}>
@@ -47,7 +47,7 @@ export default function AboutContainer() {
                     .
                 </p>
 
-                <p className={styles.description}>
+                <p className={styles.description} style={{ "--order": 2 }}>
                     Atuo tanto no{" "}
                     <span className={styles.highlight}>front-end</span> quanto
                     no <span className={styles.highlight}>back-end</span>,

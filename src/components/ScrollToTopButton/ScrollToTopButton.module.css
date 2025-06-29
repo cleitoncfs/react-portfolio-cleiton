@@ -1,4 +1,13 @@
 /* Container principal - versão simplificada */
+.scrollTop {
+    --primary: #00e6a3;
+    --primary-hover: #00ffc2;
+    --dark-bg: #111;
+    --dark-border: #222;
+    --text-primary: #f0f0f0;
+    --text-secondary: #aaa;
+}
+
 .tooltipContainer {
     position: fixed;
     right: 20px;
@@ -11,7 +20,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #54b689;
+    background: linear-gradient(135deg, var(--primary), var(--primary-hover));
     color: white;
     border: none;
     cursor: pointer;
