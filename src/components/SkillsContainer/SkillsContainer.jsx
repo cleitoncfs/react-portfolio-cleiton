@@ -4,37 +4,59 @@ import styles from "./SkillsContainer.module.css";
 const skillsData = [
     {
         title: "Front-end",
-        icons: ["html5", "css3", "javascript"],
+        skills: [
+            { name: "HTML5", icon: "html5" },
+            { name: "CSS3", icon: "css3" },
+            { name: "JavaScript", icon: "javascript" }
+        ]
     },
     {
         title: "Back-end",
-        icons: ["nodejs", "python", "php"],
+        skills: [
+            { name: "Node.js", icon: "nodejs" },
+            { name: "Python", icon: "python" },
+            { name: "PHP", icon: "php" }
+        ]
     },
     {
         title: "Bancos de Dados",
-        icons: ["mysql", "mongodb", "sqlite"],
+        skills: [
+            { name: "MySQL", icon: "mysql" },
+            { name: "MongoDB", icon: "mongodb" },
+            { name: "SQLite", icon: "sqlite" }
+        ]
     },
     {
         title: "Frameworks Front-end",
-        icons: ["react", "vuejs", "angularjs"],
+        skills: [
+            { name: "React", icon: "react" },
+            { name: "Vue.js", icon: "vuejs" },
+            { name: "AngularJS", icon: "angularjs" }
+        ]
     },
     {
         title: "Frameworks Back-end",
-        icons: ["flask", "django", "laravel"],
+        skills: [
+            { name: "Flask", icon: "flask" },
+            { name: "Django", icon: "django" },
+            { name: "Laravel", icon: "laravel" }
+        ]
     },
     {
         title: "Ferramentas",
-        icons: ["git", "linux", "docker"],
-    },
+        skills: [
+            { name: "Git", icon: "git" },
+            { name: "Linux", icon: "linux" },
+            { name: "Docker", icon: "docker" }
+        ]
+    }
 ];
 
 const SkillsContainer = () => {
     const sectionRef = useRef(null);
 
     useEffect(() => {
-        const boxes = sectionRef.current?.querySelectorAll(
-            `.${styles.skillBox}`
-        );
+        const boxes = sectionRef.current?.querySelectorAll(`.${styles.skillBox}`);
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
@@ -62,23 +84,21 @@ const SkillsContainer = () => {
             </p>
 
             <div className={styles.skillsGrid}>
-                {skillsData.map((skill, index) => (
-                    <div
-                        key={skill.title}
-                        className={styles.skillBox}
-                        style={{ "--delay": index }}
+                {skillsData.map((category, index) => (
+                    <div 
+                        className={styles.skillBox} 
+                        style={{"--delay": index}}
+                        key={category.title}
                     >
-                        <p className={styles.skillTitle}>{skill.title}</p>
+                        <p className={styles.skillTitle}>{category.title}</p>
                         <div className={styles.iconsContainer}>
-                            {skill.icons.map((icon) => (
-                                <div
-                                    key={icon}
-                                    className={styles.tooltip}
-                                    data-tooltip={icon.toUpperCase()}
+                            {category.skills.map(skill => (
+                                <div 
+                                    className={styles.tooltip} 
+                                    data-tooltip={skill.name} 
+                                    key={skill.name}
                                 >
-                                    <i
-                                        className={`devicon-${icon}-plain colored`}
-                                    ></i>
+                                    <i className={`devicon-${skill.icon}-plain colored`}></i>
                                 </div>
                             ))}
                         </div>
