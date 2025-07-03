@@ -39,7 +39,7 @@ const Footer = () => {
                 <i className="devicon-react-original colored"></i> React &
                 hospedado na{" "}
                 <a href="https://netlify.com" target="_blank" rel="noreferrer">
-                    <i className="devicon-netlify-plain colored"></i> Netlify
+                    Netlify
                 </a>
             </p>
         </footer>
