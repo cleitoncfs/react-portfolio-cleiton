@@ -117,6 +117,9 @@
     color: var(--primary);
     text-decoration: none;
     transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
 }
 
 .builtWith a:hover {
@@ -126,8 +129,12 @@
 
 .builtWith i {
     font-size: 1rem;
-    margin: 0 0.25rem;
     vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.builtWith a:hover i {
+    transform: scale(1.1);
 }
 
 .builtWith i.devicon-react-original {
@@ -170,5 +177,10 @@
 
     .link {
         padding: 0.25rem 0;
+    }
+
+    .builtWith {
+        flex-direction: column;
+        gap: 0.25rem;
     }
 }
