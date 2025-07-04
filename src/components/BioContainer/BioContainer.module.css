@@ -1,21 +1,14 @@
 .bio-container {
-    --primary: #00e6a3;
-    --primary-hover: #00ffc2;
-    --dark-bg: #111;
-    --dark-border: #222;
-    --text-primary: #f0f0f0;
-    --text-secondary: #aaa;
-
-    background: var(--dark-bg);
+    background: var(--card);
     padding: 2.5rem;
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--shadow);
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
     position: relative;
     overflow: hidden;
-    border: 1px solid var(--dark-border);
+    border: 1px solid var(--border);
 }
 
 .bio-container::before {
@@ -31,6 +24,7 @@
         transparent 70%
     );
     z-index: 0;
+    opacity: 0.7;
 }
 
 .profile-header {
@@ -60,14 +54,13 @@
     object-fit: cover;
     object-position: top;
     display: block;
-    background-color: #0e0e0e;
-    border: 3px solid var(--dark-bg);
+    background-color: var(--card);
+    border: 3px solid var(--card);
 }
 
 .name-title {
     font-size: 2rem;
     font-weight: 700;
-    color: var(--primary);
     margin: 0;
     background: linear-gradient(90deg, var(--primary), var(--primary-hover));
     -webkit-background-clip: text;
@@ -92,7 +85,7 @@
 
 .intro-text,
 .welcome-text {
-    color: var(--text-primary);
+    color: var(--text);
     line-height: 1.6;
     margin: 0;
 }
@@ -108,7 +101,7 @@
 }
 
 .about-extra {
-    color: var(--text-secondary);
+    color: var(--text); /* Alterado de text-secondary para text */
     font-style: normal;
     position: relative;
     padding: 1.25rem;
@@ -120,6 +113,15 @@
     transition: all 0.6s ease;
     margin: 1rem 0;
     line-height: 1.7;
+}
+
+body.light-mode .about-extra {
+    background: rgba(
+        0,
+        166,
+        124,
+        0.05
+    ); /* Verde mais escuro para melhor contraste */
 }
 
 .about-extra.fade-in-visible {
@@ -136,7 +138,7 @@
 }
 
 .about-extra::before {
-    content: '"'; /* Aspas corrigidas com escape */
+    content: '"';
     position: absolute;
     top: 10px;
     left: 10px;
@@ -145,11 +147,6 @@
     opacity: 0.1;
     font-family: serif;
     line-height: 1;
-}
-
-.fade-in-visible {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .contact-section {
@@ -166,8 +163,8 @@
     gap: 1.5rem;
     padding: 1.5rem 0;
     margin: 0;
-    border-top: 1px solid var(--dark-border);
-    border-bottom: 1px solid var(--dark-border);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
     list-style: none;
 }
 
@@ -223,7 +220,7 @@
 }
 
 .email-container a {
-    color: var(--text-primary);
+    color: var(--text);
     text-decoration: none;
     transition: color 0.3s ease;
     word-break: break-all;

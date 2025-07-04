@@ -1,16 +1,9 @@
 .about-container {
-    --primary: #00e6a3;
-    --primary-hover: #00ffc2;
-    --text-primary: #f0f0f0;
-    --text-secondary: #aaa;
-    --dark-bg: #111;
-    --dark-border: #222;
-
-    background: var(--dark-bg);
+    background: var(--card);
     padding: 2.5rem;
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    border: 1px solid var(--dark-border);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--border);
     position: relative;
     overflow: hidden;
 }
@@ -47,7 +40,6 @@
 .name {
     font-size: 2.5rem;
     margin-bottom: 1rem;
-    color: var(--primary);
     background: linear-gradient(90deg, var(--primary), var(--primary-hover));
     -webkit-background-clip: text;
     background-clip: text;
@@ -57,7 +49,7 @@
 .title {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color: var(--text-primary);
+    color: var(--text);
     font-weight: 500;
 }
 
@@ -89,7 +81,7 @@
     max-width: 80%;
     margin-bottom: 1.25rem;
     line-height: 1.7;
-    color: var(--text-primary);
+    color: var(--text);
     opacity: 0;
     animation: fadeIn 0.5s ease forwards;
     animation-delay: calc(var(--order) * 0.1s);
@@ -112,7 +104,7 @@
 .btn-certificates {
     font-weight: 500;
     font-size: 1rem;
-    color: var(--dark-bg);
+    color: var(--card);
     background: var(--primary);
     border: 2px solid var(--primary);
     border-radius: 8px;
@@ -126,7 +118,7 @@
     position: relative;
     overflow: hidden;
     z-index: 1;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: var(--shadow);
 }
 
 .btn-projects i,

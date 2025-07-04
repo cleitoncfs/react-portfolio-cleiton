@@ -1,27 +1,75 @@
 :root {
-    /* Cores principais (ajustáveis) */
-    --primary: #4361ee; /* Azul vibrante (destaques) */
-    --secondary: #3a0ca3; /* Azul escuro */
-    --accent: #7209b7; /* Roxo (botões/hovers) */
-    --text: #2b2d42; /* Cinza-escuro (textos) */
-    --light: #f8f9fa; /* Fundo claro */
-    --dark: #1a1a2e; /* Fundo escuro (footer) */
-    --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    /* Cores base - light mode */
+    --primary-light: #00a67c;
+    --primary-hover-light: #00c491;
+    --bg-light: #f8f9fa;
+    --text-light: #2b2d42;
+    --card-light: #ffffff;
+    --border-light: #e0e0e0;
+    --shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    /* Cores base - dark mode (TEMA PADRÃO) */
+    --primary-dark: #00e6a3;
+    --primary-hover-dark: #00ffc2;
+    --bg-dark: #111;
+    --text-dark: #f0f0f0;
+    --card-dark: #1a1a1a;
+    --border-dark: #222;
+    --shadow-dark: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+    /* Variáveis ativas (SEMPRE iniciam como dark) */
+    --primary: var(--primary-dark);
+    --primary-hover: var(--primary-hover-dark);
+    --bg: var(--bg-dark);
+    --text: var(--text-dark);
+    --card: var(--card-dark);
+    --border: var(--border-dark);
+    --shadow: var(--shadow-dark);
 }
 
-/* Reset e Base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Configuração padrão (DARK MODE) */
 body {
-    font-family: "Inter", system-ui, sans-serif;
-    line-height: 1.6;
+    background-color: var(--bg);
     color: var(--text);
-    background-color: var(--light);
-    -webkit-font-smoothing: antialiased;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light mode (APENAS quando aplicada a classe) */
+body.light-mode {
+    --primary: var(--primary-light);
+    --primary-hover: var(--primary-hover-light);
+    --bg: var(--bg-light);
+    --text: var(--text-light);
+    --card: var(--card-light);
+    --border: var(--border-light);
+    --shadow: var(--shadow-light);
+}
+
+/* (Removida a seção body.dark-mode pois já é o padrão) */
+
+/* Estilo do botão de toggle */
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: var(--primary);
+    color: var(--card);
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+    transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    background: var(--primary-hover);
 }
 
 /* Estrutura Principal */
@@ -35,6 +83,15 @@ body {
 #container {
     display: grid;
     gap: 2.5rem;
+}
+
+/* Transições suaves para componentes específicos */
+.footer,
+.bio-container,
+.about-container,
+.skillsContainer {
+    transition: background-color 0.3s ease, color 0.3s ease,
+        border-color 0.3s ease;
 }
 
 /* Responsividade */

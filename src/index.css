@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap");
+
 :root {
     --main-color: #54b689;
     --main-text-color: #fff;
@@ -5,8 +7,6 @@
     --bio-bg-color: #2c3e50;
     --about-bg-color: #1c2a36;
 }
-
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap");
 
 html,
 body {
@@ -17,20 +17,19 @@ body {
 
 body {
     font-family: "Roboto", sans-serif;
-    display: block; /* remove flex do body */
+    display: block;
     min-width: 320px;
     min-height: 100vh;
-    background-color: #242424;
-    color: rgba(255, 255, 255, 0.87);
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: var(--bg); /* Usa a variável CSS */
+    color: var(--text); /* Usa a variável CSS */
 }
 
 a {
     font-weight: 500;
-    color: #646cff;
     text-decoration: inherit;
 }
 a:hover {
@@ -49,7 +48,6 @@ button {
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
-    background-color: #1a1a1a;
     cursor: pointer;
     transition: border-color 0.25s;
 }
@@ -59,17 +57,4 @@ button:hover {
 button:focus,
 button:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-    a:hover {
-        color: #747bff;
-    }
-    button {
-        background-color: #f9f9f9;
-    }
 }
