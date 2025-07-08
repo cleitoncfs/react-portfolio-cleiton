@@ -29,21 +29,23 @@ function App() {
     };
 
     return (
-        <div className="app-wrapper">
-            <button className="theme-toggle" onClick={toggleTheme}>
-                {darkMode ? (
-                    <i className="bi bi-sun-fill"></i>
-                ) : (
-                    <i className="bi bi-moon-fill"></i>
-                )}
-            </button>
-            <main id="container">
-                <BioContainer />
-                <AboutContainer />
-                <Footer />
-            </main>
-            <ScrollToTopButton />
-        </div>
+        <>
+            <div className="app-wrapper">
+                <button className="theme-toggle" onClick={toggleTheme}>
+                    {darkMode ? (
+                        <i className="bi bi-sun-fill"></i>
+                    ) : (
+                        <i className="bi bi-moon-fill"></i>
+                    )}
+                </button>
+                <main id="container">
+                    <BioContainer />
+                    <AboutContainer />
+                </main>
+                <ScrollToTopButton />
+            </div>
+            <Footer />
+        </>
     );
 }
 

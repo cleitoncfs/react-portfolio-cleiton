@@ -1,12 +1,14 @@
 .footer {
     background: var(--card);
     color: var(--text);
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1.5rem;
     border-top: 1px solid var(--border);
     position: relative;
     overflow: hidden;
     font-size: 0.9rem;
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer::before {
