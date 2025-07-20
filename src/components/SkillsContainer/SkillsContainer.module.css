@@ -242,3 +242,42 @@ body.dark-mode .skillBox {
         font-size: 2rem;
     }
 }
+
+/* Galaxy Z Flip 3 e telas estreitas */
+@media (max-width: 390px) {
+    .skillsContainer {
+        padding: 1rem;
+    }
+
+    .skillsTitle {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .skillsGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .skillBox {
+        padding: 1rem;
+    }
+
+    .iconsContainer {
+        gap: 0.75rem;
+        justify-content: center;
+    }
+
+    .tooltip i {
+        font-size: 1.8rem;
+    }
+
+    .tooltip::after {
+        font-size: 0.65rem;
+        bottom: -24px;
+    }
+
+    .tooltip::before {
+        bottom: -8px;
+    }
+}
