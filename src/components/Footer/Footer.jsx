@@ -36,9 +36,10 @@ const Footer = () => {
 
         <p className={styles.builtWith}>
           Desenvolvido com React{' '}
-          <a href="https://react.dev/" target="_blank" rel="noreferrer"></a>
-          <i className="devicon-react-original colored"></i> & hospedado na
-          Netlify{' '}
+          <a href="https://react.dev/" target="_blank" rel="noreferrer">
+            <i className="devicon-react-original colored"></i>{' '}
+          </a>{' '}
+          & hospedado na Netlify{' '}
           <a href="https://netlify.com" target="_blank" rel="noreferrer">
             <i className="devicon-netlify-plain colored"></i>
           </a>
