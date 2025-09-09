@@ -35,10 +35,12 @@ const Footer = () => {
         </nav>
 
         <p className={styles.builtWith}>
-          Desenvolvido com <i className="devicon-react-original colored"></i>{' '}
-          React & hospedado na{' '}
+          Desenvolvido com React{' '}
+          <a href="https://react.dev/" target="_blank" rel="noreferrer"></a>
+          <i className="devicon-react-original colored"></i> & hospedado na
+          Netlify{' '}
           <a href="https://netlify.com" target="_blank" rel="noreferrer">
-            <i className="devicon-netlify-plain colored"></i> Netlify
+            <i className="devicon-netlify-plain colored"></i>
           </a>
         </p>
         <p className={styles.curriculoLink}>
