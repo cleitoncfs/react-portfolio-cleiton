@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer className={styles.footer}>
             <p>
-                &copy; {new Date().getFullYear()} - Cleiton Santos. Todos os
-                direitos reservados.
+                © {new Date().getFullYear()} - Cleiton Santos. Todos os direitos
+                reservados.
             </p>
             <p>
                 <a className={styles.link} href="#container">
